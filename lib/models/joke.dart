@@ -3,12 +3,14 @@ class Joke {
   final String type;
   final String setup;
   final String punchline;
+  bool isFavorite;
 
   Joke({
     required this.id,
     required this.type,
     required this.setup,
     required this.punchline,
+    this.isFavorite = false
   });
 
   factory Joke.fromJson(Map<String, dynamic> json) {
@@ -18,5 +20,8 @@ class Joke {
       setup: json['setup'],
       punchline: json['punchline'],
     );
+  }
+  void toggleFavorite() {
+    isFavorite = !isFavorite;
   }
 }

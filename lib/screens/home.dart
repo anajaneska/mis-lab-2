@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:mis_lab2/screens/favorite_jokes_screen.dart';
 import '../services/api_service.dart';
 import '../models/joke.dart';
 import '../widgets/joke_type/joke_type_list.dart';
@@ -49,19 +50,54 @@ class _HomeState extends State<Home> {
             },
             style: TextButton.styleFrom(
               backgroundColor: Colors.redAccent,
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20), // Padding around the text
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8), // Rounded corners
+                borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: Text(
+            child: const Text(
               "Get Random Joke",
               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
         ],
       ),
-      body: JokesList(jokeTypes: jokeTypes),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FavoriteJokesScreen(), // Navigate to FavoriteJokesScreen
+                  ),
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(12.0),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Text(
+                  "View Favorite Jokes",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: JokesList(jokeTypes: jokeTypes), // Joke list widget
+          ),
+        ],
+      ),
     );
   }
 }
