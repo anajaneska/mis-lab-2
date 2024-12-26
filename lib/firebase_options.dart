@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD1TTYhQU3q0_gjwp6cY2jdt6YBEVc9Tf4',
-    appId: '1:2578149983:web:e89046315a1c96e9f861ea',
-    messagingSenderId: '2578149983',
-    projectId: 'jokes-app-52e78',
-    authDomain: 'jokes-app-52e78.firebaseapp.com',
-    storageBucket: 'jokes-app-52e78.firebasestorage.app',
-    measurementId: 'G-YFG9NSJQ6Z',
+    apiKey: 'AIzaSyDdQbXeUt5IGyocJa_oVXtQ2OmI7Vn61BE',
+    appId: '1:616142681984:web:b229707940e95bf96ab365',
+    messagingSenderId: '616142681984',
+    projectId: 'jokes-app-914d6',
+    authDomain: 'jokes-app-914d6.firebaseapp.com',
+    storageBucket: 'jokes-app-914d6.firebasestorage.app',
+    measurementId: 'G-RZVGM1PGH4',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB0v_HlRX18tVRjwDLETqNnlIixDyy-wq0',
-    appId: '1:2578149983:android:bb678f8511e0ff63f861ea',
-    messagingSenderId: '2578149983',
-    projectId: 'jokes-app-52e78',
-    storageBucket: 'jokes-app-52e78.firebasestorage.app',
+    apiKey: 'AIzaSyDcxx8AVLcPD1i9CD9nwMccmu-NMs0veDw',
+    appId: '1:616142681984:android:b393adc6175ee59f6ab365',
+    messagingSenderId: '616142681984',
+    projectId: 'jokes-app-914d6',
+    storageBucket: 'jokes-app-914d6.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAVpf-t6csdQO2c9o8v0RxqETVDWzTN26w',
-    appId: '1:2578149983:ios:95182ec0305b483bf861ea',
-    messagingSenderId: '2578149983',
-    projectId: 'jokes-app-52e78',
-    storageBucket: 'jokes-app-52e78.firebasestorage.app',
+    apiKey: 'AIzaSyCbwdJwrOH0fvOPzhJVZcsqGRg7Nr7m2Ns',
+    appId: '1:616142681984:ios:6216b6a1f692c5b66ab365',
+    messagingSenderId: '616142681984',
+    projectId: 'jokes-app-914d6',
+    storageBucket: 'jokes-app-914d6.firebasestorage.app',
     iosBundleId: 'mk.ukim.finki.misLab2',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAVpf-t6csdQO2c9o8v0RxqETVDWzTN26w',
-    appId: '1:2578149983:ios:95182ec0305b483bf861ea',
-    messagingSenderId: '2578149983',
-    projectId: 'jokes-app-52e78',
-    storageBucket: 'jokes-app-52e78.firebasestorage.app',
+    apiKey: 'AIzaSyCbwdJwrOH0fvOPzhJVZcsqGRg7Nr7m2Ns',
+    appId: '1:616142681984:ios:6216b6a1f692c5b66ab365',
+    messagingSenderId: '616142681984',
+    projectId: 'jokes-app-914d6',
+    storageBucket: 'jokes-app-914d6.firebasestorage.app',
     iosBundleId: 'mk.ukim.finki.misLab2',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyD1TTYhQU3q0_gjwp6cY2jdt6YBEVc9Tf4',
-    appId: '1:2578149983:web:5e511ad330d242aef861ea',
-    messagingSenderId: '2578149983',
-    projectId: 'jokes-app-52e78',
-    authDomain: 'jokes-app-52e78.firebaseapp.com',
-    storageBucket: 'jokes-app-52e78.firebasestorage.app',
-    measurementId: 'G-02BHML51YC',
+    apiKey: 'AIzaSyDdQbXeUt5IGyocJa_oVXtQ2OmI7Vn61BE',
+    appId: '1:616142681984:web:d0b154bc539b00ca6ab365',
+    messagingSenderId: '616142681984',
+    projectId: 'jokes-app-914d6',
+    authDomain: 'jokes-app-914d6.firebaseapp.com',
+    storageBucket: 'jokes-app-914d6.firebasestorage.app',
+    measurementId: 'G-DMF801BGGR',
   );
 }
