@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:mis_lab2/provider/favorites_provider.dart';
+import 'package:mis_lab2/provider/joke_of_the_day_provider.dart';
 import 'package:mis_lab2/screens/favorite_jokes_screen.dart';
 import 'package:mis_lab2/screens/home.dart';
 import 'package:mis_lab2/screens/random_joke_screen.dart';
@@ -16,8 +17,11 @@ void main() async {
   await NotificationService().initNotifications();
 
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => FavoritesProvider(),
+    MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (_) => FavoritesProvider()),
+          ChangeNotifierProvider(create: (_) => JokeOfTheDayProvider()),
+    ],
       child: MaterialApp(
         initialRoute: '/',
         routes: {
@@ -26,6 +30,6 @@ void main() async {
           '/favorites': (context) => FavoriteJokesScreen(),
         },
       ),
-    ),
-  );
+
+  ));
 }

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mis_lab2/screens/favorite_jokes_screen.dart';
 import '../services/api_service.dart';
 import '../models/joke.dart';
+import '../widgets/joke_of_the_day.dart';
 import '../widgets/joke_type/joke_type_list.dart';
 
 class Home extends StatefulWidget {
@@ -65,6 +66,7 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
+          JokeOfTheDayWidget(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: GestureDetector(
